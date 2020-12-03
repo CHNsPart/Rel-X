@@ -5,7 +5,7 @@ const ball = document.getElementById('circle-color');
 const circle = document.getElementById('circle');
 const pausee = document.getElementById("pausee");
 const play = document.getElementById("play");
-const audio = document.querySelector("audio");
+const audio = document.getElementById("audio");
 const shuffle = document.getElementById("shuffle");
 const stopee = document.getElementById("stop");
 const totalTime = 7500;
@@ -42,10 +42,10 @@ shuffle.addEventListener('click', function(e) {
         audio.play();
         a++;
     } else {
-        a = 0;
         str = 'audio/5sG draft.m4a';
         audio.setAttribute('src', str);
         audio.play();
+        a = 0;
     }
 
 });
