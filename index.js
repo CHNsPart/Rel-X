@@ -18,9 +18,7 @@ var i = 1;
 
 play.addEventListener('click', function(e) {
     e.preventDefault();
-    var faudio = new Audio(str);
-    console.log(faudio);
-    faudio.play();
+    audio.play();
 });
 pausee.addEventListener('click', function(e) {
     e.preventDefault();
